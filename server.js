@@ -50,8 +50,10 @@ app.get('/about', (req, res) => {
 });
 
 // project
-app.get('/project', (req, res) => {
-  res.render('project.hbs');
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+  });
 });
 
 // /bad - send back json with errorMessage
