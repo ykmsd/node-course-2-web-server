@@ -43,10 +43,15 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/about',(req, res) => {
+app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page',
   });
+});
+
+// project
+app.get('/project', (req, res) => {
+  res.render('project.hbs');
 });
 
 // /bad - send back json with errorMessage
